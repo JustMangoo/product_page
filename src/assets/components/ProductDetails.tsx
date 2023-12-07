@@ -38,7 +38,7 @@ const ProductDetails: React.FC = () => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center w-full gap-4 p-8 my-4 bg-gray-100 md:flex-row">
+    <div className="flex flex-col justify-center w-full gap-4 p-8 my-4 bg-gray-100 items-top md:flex-row">
       <img
         src="src\assets\images\placeholder.png"
         alt={product.name}

@@ -1,4 +1,4 @@
-// Exporting types to be used across components
+//types used across components
 export type Product = {
   id: number;
   name: string;
