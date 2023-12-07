@@ -13,7 +13,7 @@ const Product: React.FC<ProductProps> = ({ product }) => {
         <img
           src="src\assets\images\placeholder.png"
           alt={product.name}
-          className="object-cover object-center w-full bg-white"
+          className="object-cover object-center w-full aspect-[4/3] bg-white"
         />
         <div className="flex justify-between w-full">
           <h3 className="text-lg">
