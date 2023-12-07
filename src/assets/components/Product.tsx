@@ -23,7 +23,11 @@ const Product: React.FC<ProductProps> = ({ product }) => {
             {product.price} {product.currency}
           </p>
         </div>
-        <p className="px-2 py-1 bg-gray-200 rounded-full">{product.category}</p>
+        <div className="flex flex-row justify-start w-full gap-1">
+          <p className="px-3 py-1 text-sm bg-gray-200 rounded-full w-fit h-fit">
+            {product.category}
+          </p>
+        </div>
       </div>
     </Link>
   );

@@ -9,7 +9,6 @@ const ProductDetails: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(false);
 
   useEffect(() => {
-    // Simulate fetching product details by ID
     const fetchProductDetails = async () => {
       setLoading(true);
       try {
@@ -39,20 +38,26 @@ const ProductDetails: React.FC = () => {
   }
 
   return (
-    <div className="max-w-2xl p-4 mx-auto my-8 bg-white rounded-lg shadow-lg">
+    <div className="flex flex-row justify-center w-full gap-4 p-8 bg-gray-100 items-top">
       <img
         src="src\assets\images\placeholder.png"
         alt={product.name}
-        className="object-cover object-center w-full bg-white"
+        className="object-cover object-center w-full bg-white aspect-square"
       />
-      <h2 className="mb-4 text-2xl font-bold">
-        {product.name} {product.id}
-      </h2>
-      <p className="mb-2 text-lg text-gray-800">Category: {product.category}</p>
-      <p className="mb-2 text-lg text-gray-800">
-        Price: {product.price} {product.currency}
-      </p>
-      <p className="text-gray-600">{product.description}</p>
+      <div className="flex flex-col w-full gap-4 my-4 justify-top">
+        <h3 className="text-3xl ">
+          <b>{product.name}</b>
+        </h3>
+        <p className="text-xl ">
+          {product.price} {product.currency}
+        </p>
+        <div>
+          <p className="px-3 py-1 text-sm bg-gray-200 rounded-full w-fit h-fit">
+            {product.category}
+          </p>
+        </div>
+        <p className="text-xl">{product.description}</p>
+      </div>
     </div>
   );
 };
