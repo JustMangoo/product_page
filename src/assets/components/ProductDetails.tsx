@@ -38,14 +38,14 @@ const ProductDetails: React.FC = () => {
   }
 
   return (
-    <div className="flex flex-row justify-center w-full gap-4 p-8 bg-gray-100 items-top">
+    <div className="flex flex-col items-center justify-center w-full gap-4 p-8 my-4 bg-gray-100  md:flex-row">
       <img
         src="src\assets\images\placeholder.png"
         alt={product.name}
         className="object-cover object-center w-full bg-white aspect-square"
       />
       <div className="flex flex-col w-full gap-4 my-4 justify-top">
-        <h3 className="text-3xl ">
+        <h3 className="text-2xl md:text-3xl ">
           <b>{product.name}</b>
         </h3>
         <p className="text-xl ">

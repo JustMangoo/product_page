@@ -48,7 +48,7 @@ const App: React.FC = () => {
 
   return (
     <Router>
-      <div className="flex flex-col items-center justify-center w-screen h-full">
+      <div className="flex flex-col items-center justify-center w-full h-full">
         <div className="flex flex-col items-center justify-center w-9/12 h-full gap-4">
           <Routes>
             <Route
